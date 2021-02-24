@@ -1,0 +1,52 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  .launchContainer {
+    display: flex;
+    margin-top: 20px;
+    .imgContainer {
+      width: 30%;
+    }
+    .dataContainer {
+      width: 70%;
+      .topDataContainer {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .filterContaier {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .filterButtons{
+      display: flex;
+    }
+    .sortButton{
+      border: 1px solid rgb(211, 211, 211);
+      background-color: transparent;
+      border-radius: 2px;
+
+      color: rgb(46, 144, 255);
+      padding: 5px 10px;
+    }
+    .sortButton:hover{
+      cursor: pointer;
+      border-color: rgb(102, 172, 252);
+      box-shadow: 0 0 5px rgba(43, 43, 43, 0.5)
+    }
+    .sortButton:active{
+      background-color: rgb(102, 172, 252);
+      color: white;
+    }
+    .filter {
+      margin-right: 20px;
+    }
+  }
+  .noData{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
